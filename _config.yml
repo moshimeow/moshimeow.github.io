@@ -3,9 +3,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "Moses blog" # the name of your site, e.g. ACME Corp.
 
 
-twitter_username: moshimeowshiVR
-github_username: slitcch
-instagram_username: moshimeowshi
+twitter_username: "moshimeowshiVR"
+github_username: "slitcch"
+instagram_username: "moshi__meow_"
 
 content:
   ordered_header_pages: 
