@@ -31,17 +31,17 @@ I'm also known for
 ## What I look like
 
 <html>
- <div class="row">
-  <div class="column">
+ <div class="selfie_row">
+  <div class="selfie_column">
     real life!
     <img src="/assets/images/rave.jpg" alt="Real life" style="width:100%">
   </div>
 
-  <div class="column">
+  <div class="selfie_column">
     VR!
     <img src="/assets/images/vr_avatar.jpg" alt="VR" style="width:100%">
   </div>
  </div>
 </html>
 
-\* If you must know, my legal name is still Moses Turner, and I once did go by that name. Not anymore.
+\* I used to go by Moses a while ago and that is still my legal name. If you knew me by that, call me Moshi now :)
