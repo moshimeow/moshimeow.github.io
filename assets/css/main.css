@@ -35,6 +35,7 @@
     transform: rotate(25deg);
     z-index: -10;
 }
+
 /* https://stackoverflow.com/questions/18309698/centering-div-that-is-wider-than-its-parent-without-setting-negative-left-margin */
 .overlay_outer {
     /* Not sure what position: fixed; does but we need it. */
@@ -49,9 +50,9 @@
     transform: translateX(-50%) translateY(-50%);
     z-index: -10;
 
-  }
+}
 
-  .overlay_outer_2 {
+.overlay_outer_2 {
     /* Not sure what position: fixed; does but we need it. */
     position: fixed;
     /* Make it Really Big so that you don't see the edges*/
@@ -61,7 +62,7 @@
     /* ie. put it in the center */
     transform: rotate(10deg);
 
-  }
+}
 
 .overlay {
     width: 100%;
@@ -82,9 +83,7 @@
         transform-origin: 50% 50%;
     }
 
-    50%
-
-    {
+    50% {
         transform: rotate(-360deg);
     }
 
@@ -136,26 +135,26 @@ body {
     background-color: rgb(10,10,10);
 } */
 
-.moses_name {
-    text-align: center;
-}
 
 .site-header {
     border-style: none none dotted none;
     border-color: darkmagenta;
 
-    padding-bottom: 10px
-        /* border-top-width: 100px; */
-        /* background-color: aliceblue; */
+    padding-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
 }
 
-.site-footer {
-    border-style: dotted none none none;
-    border-color: darkmagenta;
 
-    padding-top: 10px
-        /* border-top-width: 100px; */
-        /* background-color: aliceblue; */
+
+.svg-icon-first {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    fill: white;
+    padding-right: 5px;
+    vertical-align: text-top;
 }
 
 .svg-icon {
@@ -163,6 +162,7 @@ body {
     height: 16px;
     display: inline-block;
     fill: white;
+    padding-left: 15px;
     padding-right: 5px;
     vertical-align: text-top;
 }
@@ -173,16 +173,52 @@ code {
 }
 
 
- /* Three image containers (use 25% for four, and 50% for two, etc) */
- .column {
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.selfie_column {
     float: left;
     width: 300px;
     padding: 5px;
-  }
-  
-  /* Clear floats after image containers */
-  .row::after {
+}
+
+/* Clear floats after image containers */
+.selfie_row::after {
     content: "";
     clear: both;
     display: table;
-  } 
+}
+
+.footer_column {
+    float: left;
+    /* width: 300px; */
+    /* padding: 0 20px 0 20px; */
+    padding: 0 0 0 0;
+}
+
+.site-footer {
+    border-style: dotted none none none;
+    border-color: darkmagenta;
+
+    padding-top: 10px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    justify-content: center;
+    /* width: 100%; */
+    /* background-size: 100% 100%; */
+    /* this AND justify-content: center seem to be necessary */
+    display: flex
+    /* border-top-width: 100px; */
+    /* background-color: aliceblue; */
+}
+
+.username {
+    padding-top: 100px;
+}
+
+
+.centered_column {
+    width: 900px;
+    justify-content: center;
+    margin: auto;
+    /* display: flex; */
+    /* align-items: center; */
+}
