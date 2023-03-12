@@ -33,7 +33,7 @@ First, the artificial dataset generator I created at Collabora for their optical
 <html>
     <video autoplay controls loop muted width="900">
       <source src="/assets/videos/hand_grid_loop_long.webm" type="video/webm">
-      Video
+      Your browser doesn't seem to support video! If you're using a modern browser, please contact me using the contact info at the bottom of this page so I can fix it!
     </video>
 </html>
 
@@ -65,21 +65,21 @@ You can see my code contributions [here](https://github.com/StereoKit/StereoKit/
 <html>
     <video autoplay controls loop muted width="900">
       <source src="/assets/videos/ns_calibration/aruco.webm" type="video/webm">
-      Video
+      Your browser doesn't seem to support video! If you're using a modern browser, please contact me using the contact info at the bottom of this page so I can fix it!
     </video>
 </html>
 
 <html>
     <video autoplay controls loop muted width="900">
       <source src="/assets/videos/ns_calibration/fdg.webm" type="video/webm">
-      Video
+      Your browser doesn't seem to support video! If you're using a modern browser, please contact me using the contact info at the bottom of this page so I can fix it!
     </video>
 </html>
 
 <html>
     <video autoplay controls loop muted width="900">
       <source src="/assets/videos/ns_calibration/lines.webm" type="video/webm">
-      Video
+      Your browser doesn't seem to support video! If you're using a modern browser, please contact me using the contact info at the bottom of this page so I can fix it!
     </video>
 </html>
 
