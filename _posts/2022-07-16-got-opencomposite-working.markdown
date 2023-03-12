@@ -201,13 +201,16 @@ static void find_queue_family_and_queue_idx(VkDevice dev, VkPhysicalDevice pdev,
 
 NO!!!!
 
+<html>
+      <img src="/assets/images/notmade.jpg" alt="BAD IDEA" height="300">
+</html>
 
 So, this code just assumes there's an isomorphism between queues and queue indices, iterates over all the queue family indices and queue indices that in the VkDevice that the app provides us, and compares their handles to the VkQueue that the app gave us. Problem is that I don't know if the Vulkan spec does guarantees that queues/queue indices we ask for and the VkQueue handles that the Vulkan implementation gives out are isomorphic! RADV does seem to have this isomorphism, but do all of them? I guess RADV probably allocates all the handles when you run VkCreateInstance and just keeps handing out the same ones, but does it *have* to? Will this break on other Vulkan implementations? I have no idea!
 
 
 Aaannnyyywaaayyyy, with that house-of-cards fix in place, I was able to really cleanly delete OpenComposite's vulkan compositor's third-buffer-allocation stuff and just copy directly from the app's image to the runtime's image. It asserts if the app changes up it's VkInstance/VkDevice/VkQueue, but so far no apps do that, and so far no users downstream have had real problems with it. That MR is [here](https://gitlab.com/znixian/OpenOVR/-/merge_requests/35) for all the world to see.
 
-Anyway, after that, VRChat (and the hellovr_vulkan sample) just started working quite well! There are lots of problems sure, but in general the UIs work well (even through *two* layers of emulation - Proton *and* OpenComposite,) my avatar displays correctly, I can talk to people and while there is some jank, there aren't really any showstoppers left, I can just use it.
+Anyway, after that, VRChat (and the hellovr_vulkan sample) just started working quite well! Yes there are a lot of visible problems. But. In general the UIs work well (even through *two* layers of emulation - Proton *and* OpenComposite,) my avatar displays correctly, and I can talk to people without issues. While there is some jank, there aren't really any showstoppers left; I can just use it.
 
 However the compositor is still trash. It's doing a whole lot more `vkQueueWaitIdle`s than it needs to, which makes the copies take around 3ms in total - too long. When big games put the GPU under pressure and/or take over about 5ms to render (assuming the displays run at 120Hz here,) this can make the frames tank a little more than they would under a good compositor. I can fix this but I need to do some rather gnarly refactors first. - specifically, I really want us to wait on the queue only on the *next* frame, so that a) we can safely do both copies concurrently and b) bundle up the wait on the image copy with the other stuff Monado does internally such that the next-frame-wait only actually happens very rarely. It'll happen, just will take time.
 
@@ -229,5 +232,5 @@ todo on Monado:
 * Playspace mover
 * Make aim->grip offset perfectly match SteamVR
 
-I also need to test with Neos, Beat Saber and Population One. I already know Neos doesn't work for non-graphics reasons (something with the input profile?) but the other ones are big unknowns for me. All of this constitutes a few weeks of full-time work, so I'll be getting through it rather slowly along with my real job and other things I do for fun. Anyways that's pretty much all I've got for this post. I'll probably make another post showing off further fixes I make, and hopefully make my own guide showing how to build all the stuff you need for this. laters!
+I also need to test with Neos, Beat Saber and Population One. I already know Neos doesn't work for non-graphics reasons (something with the input profile?) but the other ones are big unknowns for me, just haven't tried yet. All of this constitutes a few weeks of full-time work, so I'll be getting through it rather slowly along with my real job and other things I do for fun. Anyways that's pretty much all I've got for this post. I'll probably make another post showing off further fixes I make, and hopefully make my own guide showing how to build all the stuff you need for this. laters!
 
