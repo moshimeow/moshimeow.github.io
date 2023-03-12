@@ -176,7 +176,7 @@ code {
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .selfie_column {
     float: left;
-    width: 300px;
+    width: 440px;
     padding: 5px;
 }
 
