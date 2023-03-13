@@ -24,14 +24,13 @@ This is by far the coolest thing I've done so far.
 
 <html>
     <video autoplay controls loop muted width="100%">
-      <source src="/assets/videos/hand_grid_loop_long.webm" type="video/webm">
+      <source src="/assets/videos/mercury_demo_3.webm" type="video/webm">
       Your browser doesn't seem to support video! If you're using a modern browser, please contact me using the contact info at the bottom of this page so I can fix it!
     </video>
 </html>
 
 ([Twitter link](https://t.co/zitKhc66Yp))
 
-<blockquote class="twitter-tweet" data-dnt="true" data-theme="dark"><p lang="en" dir="ltr">Long time coming! This was so much work and I can&#39;t be more happy that it&#39;s finally out there :D <br><br>SteamVR driver next so not-linux-nerds can use it with Index! <a href="https://t.co/EYJ4T8LoOB">https://t.co/EYJ4T8LoOB</a> <a href="https://t.co/zitKhc66Yp">pic.twitter.com/zitKhc66Yp</a></p>&mdash; moshi turner (@moshimeowshiVR) <a href="https://twitter.com/moshimeowshiVR/status/1629230973492645895?ref_src=twsrc%5Etfw">February 24, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 These are through-the-lens (or through-the-virtual-left-eye for VR headsets) recordings
 
@@ -98,7 +97,7 @@ You can see my code contributions [here](https://github.com/StereoKit/StereoKit/
 </html>
 
 <html>
-    <video autoplay controls loop muted width=100%>
+    <video autoplay controls loop muted width="100%">
       <source src="/assets/videos/ns_calibration/lines.webm" type="video/webm">
       Your browser doesn't seem to support video! If you're using a modern browser, please contact me using the contact info at the bottom of this page so I can fix it!
     </video>
