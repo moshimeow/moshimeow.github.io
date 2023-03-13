@@ -50,3 +50,28 @@ So I think the real problem was that I had Apt's jekyll, which was different tha
 
 https://talk.jekyllrb.com/t/new-install-jekyll-4-0-0-on-ubuntu-19-04-gives-error/3262/5
 sudo mv /usr/lib/ruby/vendor_ruby /usr/lib/ruby/vendor_ruby_bad
+
+
+
+
+
+
+
+
+
+
+------------------------------
+
+
+gem update
+ERROR:  While executing gem ... (Gem::Exception)
+    OpenSSL is not available. Install OpenSSL and rebuild Ruby (preferred) or use non-HTTPS sources
+
+->
+
+$ gem uninstall openssl
+Gem openssl-3.0.0 cannot be uninstalled because it is a default gem
+Successfully uninstalled openssl-3.0.0
+There was both a regular copy and a default copy of openssl-3.0.0. The regular copy was successfully uninstalled, but the default copy was left around because default gems can't be removed.
+
+OK then lol
