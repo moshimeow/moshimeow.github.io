@@ -31,13 +31,13 @@ I'm also known for
 ## What I look like
 
 <html>
- <div class="selfie_row">
-  <div class="selfie_column">
+ <div class="half_split_row">
+  <div class="half_split_column">
     real life!
     <img src="/assets/images/rave.jpg" alt="Real life" style="width:100%">
   </div>
 
-  <div class="selfie_column">
+  <div class="half_split_column">
     VR!
     <img src="/assets/images/vr_avatar.jpg" alt="VR" style="width:100%">
   </div>
