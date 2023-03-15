@@ -217,6 +217,8 @@ code {
     width: 900px;
     justify-content: center;
     margin: auto;
+    /* Padding between this column which makes up the whole page and the bottom dots */
+    padding-bottom: 10px
     /* display: flex; */
     /* align-items: center; */
 }
