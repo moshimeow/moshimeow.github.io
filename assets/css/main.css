@@ -74,7 +74,9 @@
     /* transform: rotate(-25deg); */
     /* transform-origin: 0% 0%; */
     /* animation: 0.5s rotate-left infinite linear; */
-    animation: 2000s rotate-left infinite linear;
+
+    /* This is the one you'd want */
+    /* animation: 2000s rotate-left infinite linear; */
 }
 
 @keyframes rotate-left {
