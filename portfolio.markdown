@@ -16,15 +16,19 @@ This is ordered by "significance of technical achievement" - the things I'm most
 
 # Monado's hand tracking
 
-This is by far the coolest thing I've done so far. This is a competent, reasonably low-latency, accurate and smooth optical hand tracking system, built from scratch (not on top of Mediapipe, although [I tried that too](https://www.collabora.com/news-and-blog/blog/2022/05/31/monado-hand-tracking-hand-waving-our-way-towards-a-first-attempt/)) with a completely open-source implementation and dataset.
-It also works on pretty much any VR headset with calibrated cameras.
+This is by far the coolest thing I've worked on so far. This is a low-latency, accurate and smooth optical hand tracking system, built from scratch (not on top of Mediapipe, although [I tried that too](https://www.collabora.com/news-and-blog/blog/2022/05/31/monado-hand-tracking-hand-waving-our-way-towards-a-first-attempt/)) with a completely open-source implementation and dataset.
 
-Many considered this problem way too hard and best left to the likes of Ultraleap and Oculus, but we said no way to that idea! It's been a lot of work, but it's a think you can do.
+Many considered this problem one best left to the big leagues of Ultraleap and Oculus. I thought differently, and we ended up with a really good system that basically works on any VR headset with calibrated cameras.
 
-At Collabora I've done maybe 90% of the relevant work: scraping, collecting and generating training data, writing and wrangling machine learning training infrastructure, writing realtime inference code in C++, a realtime nonlinear optimizer to get a smooth 3D hand pose trajectory, and various infrastructure to deal with camera streaming, camera calibration, distortion/undistortion, etc.
+At Collabora I've done maybe 90% of the relevant work:
 
-This took me about a year, starting right after I graduated college.
-I was a pretty huge novice to computer vision, machine learning and algorithms, but I made it happen through hard work and being completely unafraid to learn new things!
+* Scraping, collecting, and generating training data
+* Writing and wrangling machine learning training infustructure
+* Writing realtime inference code in C++
+* Creating a realtime nonlinear optimizer to get smooth 3D hand pose trajectories
+* Writing various infrastructure to deal with camera streaming, camera calibration, distortion/undistortion, etc.
+
+This took me about a year, right out of college. I was a pretty huge novice to computer vision, machine learning, and algorithms, but through hard work and waging holy war against impostor syndrome, we made it happen!
 
 ## Full-system demo
 
@@ -81,7 +85,7 @@ Here's some imagery of the debug view of our optical hand tracking pipeline. The
       <img src="/assets/images/DEBUG.png" alt="steam" width="100%">
 </html>
 
-The hand detector is pretty boring: it takes full camera views cropped down to 160x160 and outputs a 8D vector corresponding to the center, radius and confidence of the left and right hand bounding boxes.
+The hand detector is simple: it takes full camera views cropped down to 160x160 and outputs a 8D vector corresponding to the center, radius and confidence of the left and right hand bounding boxes.
 
 <html>
       <img src="/assets/images/kitty.png" alt="steam" width="33%">
@@ -89,7 +93,7 @@ The hand detector is pretty boring: it takes full camera views cropped down to 1
 
 Both of these models were pretty heavily inspired by [Facebook's MeGATrack paper](https://research.facebook.com/publications/megatrack-monochrome-egocentric-articulated-hand-tracking-for-virtual-reality/) and [milkcat0904's PyTorch reimplementation of the model architectures](https://github.com/milkcat0904/MegaTrack-pytorch) although we've iterated a bit on the base model architectures by now.
 
-Also, to be clear, we don't have any of Facebook's weights or dataset - we did train these from scratch! shoutout to facebook for doing quite actually-open research (publish your datasets next pls) and milkcat0904 for their very solid reimplementation!
+Also, to be clear, we don't have any of Facebook's weights or dataset - we did train these from scratch! Shoutout to facebook for doing quite actually-open research (publish your datasets next pls) and milkcat0904 for their very solid reimplementation!
 
 <!-- TODO Add visualization picture -->
 <!-- 
@@ -108,12 +112,12 @@ This is what we use to turn model predictions into a smooth 6DOF hand trajectory
 
 The story of how we got there was pretty interesting, though.
 
-* late 2021: Started by implementing very simple SGD from finite differences, from scratch in C++. I did end up getting it working, but it was very slow.
-* late 2021-early 2022: Read a bunch about kalman filtering, figured out that we'd _definitely_ need something iterative - I remember Iterative Extended Kalman Filters and single constraint at a time looking somewhat promising
-* early 2022: Wrote a very weird optimizer that iteratively ran Cyclic Coordinate Descent IK on all hand joints, using basically the centerpoint of all the downstream joints as end effector/target joints, and used Umeyama within the loop to position the root joint. This worked but it was jittery and we had very little control over it
-* early-mid 2022: Realized Levenberg-Marquardt was the way to go, especially after reading FB paper. Started by using Eigen's [unsupported LM implementation](https://gitlab.com/libeigen/eigen/-/blob/master/unsupported/Eigen/src/NonLinearOptimization/LevenbergMarquardt.h) with finite differences. This worked but was pretty slow. Messed around with Ceres, Enoki and sympy - ended up using Ceres's tinysolver and packaging it [here.](https://gitlab.freedesktop.org/monado/utilities/hand-tracking-playground/tinyceres) We're still using tinyceres, pretty happy with it!
+* Late 2021: Started by implementing very simple SGD from finite differences, from scratch in C++. I did end up getting it working, but it was very slow
+* Late 2021-early 2022: Read a bunch about kalman filtering, figured out that we'd _definitely_ need something iterative - I remember Iterative Extended Kalman Filters and single constraint at a time looking somewhat promising
+* Early 2022: Wrote a very weird optimizer that iteratively ran Cyclic Coordinate Descent IK on all hand joints, using basically the centerpoint of all the downstream joints as end effector/target joints, and used Umeyama within the loop to position the root joint. This worked but it was jittery and we had very little control over it
+* Early-mid 2022: Realized Levenberg-Marquardt was the way to go, especially after reading FB paper. Started by using Eigen's [unsupported LM implementation](https://gitlab.com/libeigen/eigen/-/blob/master/unsupported/Eigen/src/NonLinearOptimization/LevenbergMarquardt.h) with finite differences. This worked but was pretty slow. Messed around with Ceres, Enoki and sympy - ended up using Ceres's tinysolver and packaging it [here.](https://gitlab.freedesktop.org/monado/utilities/hand-tracking-playground/tinyceres) We're still using tinyceres, pretty happy with it!
 
-[I really wanted to include visuals here, but then realized I don't quite know what a nonlinear optimizer looks like. If you know how to take a picture of one, please contact me!]
+(I really wanted to include visuals here, but then realized I don't quite know what a nonlinear optimizer looks like. If you know how to take a picture of one, please contact me!)
 
 <!-- <html>
       <img src="/assets/images/architecture.jpg" alt="steam" width="100%">
@@ -152,7 +156,6 @@ Many thanks to:
 * Christoph Haag, Lubosz Sarnecki, Pete Black and all the other Monado contributors for giving me such a solid base of hardware drivers and infrastructure to build on top of.
 
 The code is a little bit spread out, so here are some links:
-
 * [Main inference code](https://gitlab.freedesktop.org/monado/monado/-/tree/main/src/xrt/tracking/hand/mercury)
 * [Repo hosting final trained models](https://gitlab.freedesktop.org/monado/utilities/hand-tracking-models)
 * [Repo for data generation, annotation, model training and pipeline evaluation](https://gitlab.freedesktop.org/monado/utilities/hand-tracking-playground/mercury_train/)
@@ -190,7 +193,7 @@ The main focus of my work here was _empirical_ calibration, where you place a ca
 
 This was my very first "real" computer vision project, and I ended up trying a lot of things before I learned enough to make something that actually worked! In sequential order, this is what I remember doing:
 
-* Canny edge detection - didnt' work well because of bloom
+* Canny edge detection - didn't work well because of bloom
 * Used thresholding - drawing one line at a time on the vertical and horizontal axes, keeping track of which pixels in the camera image were above a certain threshold for that line, then for each grid point take the intesection of active pixels for the vertical and horizontal line that point corresponded to. This worked but was very unreliable and needed a lot of tuning:
 
   <html>
@@ -271,7 +274,7 @@ as well as a cool graph which has deemed me the fourth-biggest contributor [here
 Off the top of my head I've
 
 * Written a frameserver driver for DepthAI cameras
-* Added various improvments to the Vive/Index and WMR drivers, adding support for hand tracking and more config options
+* Added various improvements to the Vive/Index and WMR drivers, adding support for hand tracking and more config options
 * Worked a ton on Monado's device setup code
 * Worked on Monado's camera calibration and frame streaming infrastructure
 * Created a hardware+undistortion driver for SimulaVR's upcoming HMD
