@@ -24,9 +24,9 @@ I'm also known for
 * Being a VRChat catgirl
 * Being an annoying punk rock kid, stage diving and moshpits
 * Traveling the world a bit. Still need to go to: Taipei, Shenzhen, Glacier National Park, Iquitos, Scotland.
-* Being a reasonably-sized space nerd. I've seen the Starship SN10 launch in person and it has so far been the literal high point of my life.
-* Being a life extension/transhumanism nerd. I absolutely am invested in the modern search for the fountain of youth.
-* Explorations into user-hostile retro web design. To my knowledge, this website has given three people motion sickness!
+* Being a reasonably-sized space nerd. I've seen the Starship SN10 launch in person and it has so far been the literal high point of my life
+* Being a life extension/transhumanism nerd. I absolutely am invested in the modern search for the fountain of youth
+* Explorations into user-hostile retro web design
 
 ## What I look like
 
@@ -44,4 +44,4 @@ I'm also known for
  </div>
 </html>
 
-\* I used to go by Moses a while ago and that is still my legal name. If you knew me by that, call me Moshi now :)
+\* I used to go by Moses a while ago and that is still my legal name. Please call me Moshi now :)
