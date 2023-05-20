@@ -24,7 +24,7 @@ I'm also known for
 * Being a VRChat catgirl
 * Being an annoying punk rock kid, stage diving and moshpits
 * Traveling the world a bit. Still need to go to: Taipei, Shenzhen, Glacier National Park, Iquitos, Scotland.
-* Being a reasonably-sized space nerd. I've seen the Starship SN10 launch in person and it has so far been the literal high point of my life
+* Being a reasonably big space nerd. So far I've seen the Starship SN10 and 4/20 full-stack launch in person, and once I met Sunita Williams.
 * Being a life extension/transhumanism nerd. I absolutely am invested in the modern search for the fountain of youth
 * Explorations into user-hostile retro web design
 
