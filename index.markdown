@@ -12,35 +12,23 @@ welcome! this is my website!
 
 My legal name is Moshi Rachel Danger Turner. Call me Moshi. My pronouns are she/her or they/them.
 
-I live in Austin, Texas and currently work on optical hand tracking at Collabora. Recently I've taken a lot of interest in math, state estimation, AR/VR, machine learning/data engineering and FOSS. This has been a pretty crazy happy culmination of those five things.
+I am transgender, ex-mormon, and a sexual assault survivor. I say this not because I want the sympathy of strangers. I want people who are going through or processing similar traumatic experiences to know that I've been there, that I've (mostly!) made it through to the other side, and that staying alive is worth it. No matter how low you are feeling, what was done to you or what you did, there is always a path to redemption. Every sentient light deserves love and respect. My contact info is at the bottom if you want to talk.
 
-I'm very happy about the hand tracking work, so here's the best showcase I happen to have at the moment:
-<https://twitter.com/moshimeowshiVR/status/1582102996242280448>
+I live in Capitol Hill, Seattle, Washington, USA but travel a lot. Ask me about my travel plans and let's hang out!
 
-I'm also known for
-
-* Being pretty good at AR/VR demos
-* Skateboarding, quad/inline skating
-* Being a VRChat catgirl
-* Being an annoying punk rock kid, stage diving and moshpits
-* Traveling the world a bit. Still need to go to: Taipei, Shenzhen, Glacier National Park, Iquitos, Scotland.
+I am interested in:
+* Real-time algorithms & state estimation
+* Augmented reality and virtual reality. I'm especially interested in making VR avatars more compelling & useful as a tool for diagnosing body dysmorphia & dysphoria, and computing & collaboration in 3D virtual space with other people.
+* Machine learning and data engineering, especially small real-time models
+* Free and open-source software
+* Transhumanism, life extension, ectogenesis, hormone replacement therapy & other forms of biohacking
+* Having children in the next 5-10 years & alternative forms of education
+* Traveling the world and trying to fit myself into different cultures. I am fluent in English, semi-fluent in Mandarin & Hindi, and can speak a lot of other languages at party trick levels.
+* Various expensive sports including motorcycles, quad skates, skateboards and snowboarding
 * Being a reasonably big space nerd. So far I've seen the Starship SN10 and 4/20 full-stack launch in person, and once I met Sunita Williams.
-* Being a life extension/transhumanism nerd. I absolutely am invested in the modern search for the fountain of youth
 * Explorations into user-hostile retro web design
 
-## What I look like
+At my last job, I worked on Monado, the open-source OpenXR runtime, and Monado's hand tracking. Here's a demo of that:
+<https://twitter.com/moshi_meow_/status/1582102996242280448>
 
-<html>
- <div class="half_split_row">
-  <div class="half_split_column">
-    real life!
-    <img src="/assets/images/rave.jpg" alt="Real life" style="width:100%">
-  </div>
-
-  <div class="half_split_column">
-    VR!
-    <img src="/assets/images/vr_avatar.jpg" alt="VR" style="width:100%">
-  </div>
- </div>
-</html>
-
+I'll update this when I can talk about my current job.
