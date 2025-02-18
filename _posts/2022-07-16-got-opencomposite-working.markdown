@@ -6,7 +6,7 @@ categories: update
 ---
 
 
-### *Update February 2025: I'd just like to shout out the [Linux VR Adventures](https://discord.gg/RnGMUKPMnj) discord server! I don't really work on this stuff anymore and it's basically all them doing stuff like this now.*
+### *Update February 2025: I'd just like to shout out the [Linux VR Adventures](https://lvra.gitlab.io/docs/community/) discord server! I don't really work on this stuff anymore and they are now the most active community I know of doing this stuff.*
 
 Somehow I put out enough fires that I can play
 VRChat on Linux without using SteamVR! Take a look:
