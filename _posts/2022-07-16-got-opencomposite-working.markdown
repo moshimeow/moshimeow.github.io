@@ -1,12 +1,15 @@
 ---
 layout: post
-title:  "I got VRChat working with OpenComposite/Monado/Linux! No more yucky SteamVR!"
+title:  "I got VRChat working with OpenComposite/Monado/Linux!"
 date:   2022-07-16 00:00:00 +0100
 categories: update
 ---
 
-Hey friends, this is super cool, somehow I put out enough fires that I can play
-VRChat on Linux without using SteamVR! Check it out:
+
+### *Update February 2025: I'd just like to shout out the [Linux VR Adventures](https://discord.gg/RnGMUKPMnj) discord server! I don't really work on this stuff anymore and it's basically all them doing stuff like this now.*
+
+Somehow I put out enough fires that I can play
+VRChat on Linux without using SteamVR! Take a look:
 
 <iframe title="vrchat with opencomposite/monado"
 src="https://diode.zone/videos/embed/04d23ef5-db0f-4a40-974a-53ab5cc4abf3"
@@ -43,9 +46,10 @@ Let me define some terms:
   OpenVR runtime while really just translating its calls to OpenXR.
 
 Basically... on PC, VRChat is OpenVR only. So, usually, it only works with
-SteamVR. And SteamVR on Linux *sucks*, like, a lot. Last I tried it, it had
+SteamVR. ~~And SteamVR on Linux *sucks*, like, a lot. Last I tried it, it had
 around 150ms head tracking latency, which was so bad that it didn't even make me
-sick; it just completely stopped being immersive.
+sick; it just completely stopped being immersive.~~ *Update February 2025: I have
+no idea if this is still true. Probably not.*
 
 I use Linux for my job, and it's annoying to have to reboot to Windows for this
 one thing and not have all my regular puter stuff that I've got on my Arch

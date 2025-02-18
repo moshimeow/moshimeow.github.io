@@ -6,6 +6,7 @@ title: "Moshi's website :)" # the name of your site, e.g. ACME Corp.
 twitter_username: "moshi_meow_"
 github_username: "moshimeow"
 instagram_username: "moshi__meow_"
+bsky_username: "moshi.bsky.social"
 
 content:
   ordered_header_pages: 

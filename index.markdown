@@ -14,7 +14,7 @@ My legal name is Moshi Rachel Danger Turner. Call me Moshi. My pronouns are she/
 
 I am transgender, ex-mormon, and a sexual assault survivor. I say this not because I want the sympathy of strangers. I want people who are going through or processing similar traumatic experiences to know that I've been there, that I've (mostly!) made it through to the other side, and that staying alive is worth it. No matter how low you are feeling, what was done to you or what you did, there is always a path to redemption. Every sentient light deserves love and respect. My contact info is at the bottom if you want to talk.
 
-I live in Capitol Hill, Seattle, Washington, USA but travel a lot. Ask me about my travel plans and let's hang out!
+I live in Seattle, Washington but travel a lot. Ask me about my travel plans and let's hang out!
 
 I am interested in:
 * Real-time algorithms & state estimation
