@@ -1,0 +1,15 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Moshi's website :)" # the name of your site, e.g. ACME Corp.
+
+
+twitter_username: "moshi_meow_"
+github_username: "moshimeow"
+instagram_username: "moshi__meow_"
+
+content:
+  ordered_header_pages: 
+    - index.markdown
+    - blog.markdown
+    - portfolio.markdown
+
