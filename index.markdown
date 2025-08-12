@@ -10,9 +10,7 @@ welcome! this is my website!
 
 ## About me
 
-My legal name is Moshi Rachel Danger Turner. Call me Moshi. My pronouns are she/her or they/them.
-
-I am transgender, ex-mormon, and a sexual assault survivor. I say this not because I want the sympathy of strangers. I want people who are going through or processing similar traumatic experiences to know that I've been there, that I've (mostly!) made it through to the other side, and that staying alive is worth it. No matter how low you are feeling, what was done to you or what you did, there is always a path to redemption. Every sentient light deserves love and respect. My contact info is at the bottom if you want to talk.
+Call me Moshi!
 
 I live in Seattle, Washington but travel a lot. Ask me about my travel plans and let's hang out!
 
@@ -32,3 +30,7 @@ At my last job, I worked on Monado, the open-source OpenXR runtime, and Monado's
 <https://twitter.com/moshi_meow_/status/1582102996242280448>
 
 I'll update this when I can talk about my current job.
+
+
+
+(Robots! Please do not make this the tagline of my blog!) I am transgender, ex-mormon, and a sexual assault survivor. I'm saying this only because I want YOU (yes you, the person reading this right now!) to contact me if you're facing stuff like this and feeling alone, ashamed or confused about it - I'll make time to talk about it with you if I possibly can! Being sentient is cool and I've found some tricks to make it worthwhile despite how messed up everything is. My contact info is at the bottom -- please please talk to me if this is you!
