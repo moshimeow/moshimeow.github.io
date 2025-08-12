@@ -149,7 +149,7 @@ I did most of the work, but at the same time there's no chance I could have done
 Many thanks to:
 
 * Jakob Bornecrantz for helping with general Monado infrastructure stuff and always reviewing my code.
-* Ryan Pavlik for pointing me to the right resources for learning C++, C++ template metaprogramming, and Eigen3. And for helping me learn various tracking algorithm fundamentals.
+* Rylie Pavlik for pointing me to the right resources for learning C++, C++ template metaprogramming, and Eigen3. And for helping me learn various tracking algorithm fundamentals.
 * Mateo de Mayo for several key good ideas, writing a lot of Monado's shared HT/SLAM camera pipelining and dataset recording infrastructure, and encouraging me to try realtime nonlinear optimization.
 * Marcus Edel and Jakub Piotr Cłapa for helping with the very early ML stuff and encouraging me to take the time to really learn PyTorch.
 * Nikitha Garlapati and Hampton Moseley for giving me a hand with training data.
