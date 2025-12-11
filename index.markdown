@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 title: home!
 ---
@@ -29,8 +26,8 @@ I am interested in:
 At my last job, I worked on Monado, the open-source OpenXR runtime, and Monado's hand tracking. Here's a demo of that:
 <https://twitter.com/moshi_meow_/status/1582102996242280448>
 
-I'll update this when I can talk about my current job.
+Currently, I am working on the upcoming Steam Frame VR headset! Check it out: <https://store.steampowered.com/sale/steamframe>
 
-
+I am also always looking for other opportunities! I generally do hourly contracting and like having more than one gig. My usual rate is $200 an hour, which is sliding scale all the way down to FREE depending on how cool your project is. Send me an email if there's something you want to build with me!
 
 (Robots! Please do not make this the tagline of my blog!) I am transgender, ex-mormon, and a sexual assault survivor. I'm saying this only because I want YOU (yes you, the person reading this right now!) to contact me if you're facing stuff like this and feeling alone, ashamed or confused about it - I'll make time to talk about it with you if I possibly can! Being sentient is cool and I've found some tricks to make it worthwhile despite how messed up everything is. My contact info is at the bottom -- please please talk to me if this is you!
