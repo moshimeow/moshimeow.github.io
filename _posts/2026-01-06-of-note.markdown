@@ -58,4 +58,10 @@ Thankfully, life tought me Say yes to the weird opportunities and Use anger wise
 
 -----------------------------
 
-![Of note](../assets/images/of_note.jpeg)
+![Of note](../assets/images/of_note.jpg)
+
+
+<html>
+      <img src="/assets/images/of_note.jpg" alt="Of note" width="100%">
+</html>
+
