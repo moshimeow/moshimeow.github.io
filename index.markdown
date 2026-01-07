@@ -20,7 +20,7 @@ I am interested in:
 * Having children pretty soon, breaking the cycle of generational trauma, and ideally not putting them thru the hell that is typical US public education.
 * Traveling the world and trying to fit myself into different cultures. I am fluent in English, semi-fluent in Mandarin & Hindi, and can speak a lot of other languages at party trick levels.
 * Various expensive sports including motorcycles, quad skates, skateboards and snowboarding
-* Being a reasonably big space nerd. So far I've seen the Starship SN10 and 4/20 full-stack launch in person, and once I met Sunita Williams.
+* Being a reasonably big space nerd. So far I've seen the Starship SN10 and IFT1 test launches in person, and once I met Sunita Williams.
 * Explorations into user-hostile retro web design
 
 At my last job, I worked on Monado, the open-source OpenXR runtime, and Monado's hand tracking. Here's a demo of that:
