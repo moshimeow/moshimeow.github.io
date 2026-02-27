@@ -64,7 +64,9 @@ Put a bunch of kewpie mayo at the end
 * mung beans
 * olive oil
 * basmati rice
+
 veggies:
+
 * carrots
 * onions
 * garlic
@@ -72,7 +74,9 @@ veggies:
 * sweet potato
 * artichokes?
 * spinach
+
 spices:
+
 * cumin
 * mustard seeds (?)
 * cardamom
@@ -82,9 +86,9 @@ spices:
 * red pepper flakes
 * black pepper
 
-Instructions:
+### Instructions:
 
-* Soak mung beans or pressure cook them
+Soak mung beans or pressure cook them
 
 Sautee...
 * Chop and sautee onions + garlic
@@ -92,7 +96,7 @@ Sautee...
 * Add all spices
 * Add all vegetables
 * Add spinach and mung beans + water if needed
-
+* Bring everything to a boil then simmer for a while
 
 ## Zoe vegan chili
 This is my favorite thing to meal prep! It’s what Moshi had after our big trail run (she asked for the recipe and I forgot to send it to her lol)
